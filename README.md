@@ -1,72 +1,71 @@
-# 🦈 Sharkboy & Lavagirl Surf Camp – Shark Attack Analysis
+# 🦈 Shark-project
 
-## Hypothesis & Camp Strategy
 
-**Problem:**  
-Many young surfers—especially beginners and teenagers—enter the ocean without sufficient knowledge about marine ecosystems, shark behavior, or safe surfing practices.
+### Problem
+Many young surfers, especially beginners and teenagers, enter the ocean without sufficient knowledge about marine ecosystems, shark behavior, or safe surfing practices.
 
-**Hypothesis:**
+### Objective
+Evaluate the real level of shark-incident risk among teenagers (ages 12–20) in the USA, and determine whether recreational activities such as surfing pose a significant danger.  
+Additionally, use the data to support the development of safe, educational, and well-informed youth surf programs.
 
-- _Teenagers (12–20) may underestimate the risks of coastal sports, including surfing, making them vulnerable to shark attacks._
-- _A structured surf camp with safety education can reduce risk and promote safe practices._
-
-**Camp Strategy:**
-
-1. **Safe Location:** Choose U.S. coastal areas with historically low shark activity.
-2. **Target Age Group:** Focus on teenagers 12–20 years old.
-3. **Structured Activities:** Supervised surfing lessons plus low-risk beginner activities.
-4. **Risk Awareness:** Integrate safety education on sharks, ocean behavior, and emergency response.
-5. **Seasonal Scheduling:** Hold lessons during historically safer months.
-
-**Expected Outcome:**
-
-- Teens learn surfing in a **safe and controlled environment**.
-- Exposure to risk is minimized using **data-informed decisions**.
-- The camp positions itself as **professional, safe, and teen-focused**, supporting both safety and business growth.
+### Hypothesis
+"Among ocean activities practiced by teenagers, surfing presents the highest relative risk of shark incidents."
 
 ---
 
 ## Day 1 — Data Tasks
 
 - Loaded dataset, inspected columns, missing values, and duplicates.
-- **Issues & fixes:**
+
+### Issues & Fixes
 
 | Column   | Issue                | Action Taken                 |
 | -------- | -------------------- | ---------------------------- |
-| Age      | Missing/inconsistent | Cleaned, converted to int    |
+| Age      | Missing/inconsistent | Cleaned, converted to INT    |
 | Activity | Inconsistent strings | Categorized into groups      |
-| Date     | Stored as string     | Converted to datetime        |
+| Date     | Stored as string     | Converted to date time        |
 | Sex      | Inconsistent values  | Standardized, filled Unknown |
-| Location | Missing values       | Filled 'Unknown'             |
+| Location | Missing values       | Filled "Unknown"             |
 
 ---
 
 ## Day 2 — Data Cleaning
 
-- Standardized column names, cleaned categorical values, removed duplicates.
-- Filled missing values (median/mode/‘Unknown’).
-- Created additional columns: `age_group`, `Activity_Category`, `Season`.
+- Standardized column names  
+- Cleaned categorical values  
+- Removed duplicates  
+- Filled missing values (median/mode/"Unknown")  
+- Created additional columns: `age_group`, `Activity_Category`, `Season`
 
 ---
 
 ## Day 3 — Aggregation & Analysis
 
-- Filtered data: **U.S. teens 12–20, from 1950 onward**.
+- Filtered data to: U.S. teens 12–20, from 1950 onward  
 - Aggregated:
-  - Top states and activities for shark attacks.
-  - Age patterns within the target group.
-  - Pivot tables: State × Activity.
-- Key outcomes: fatal vs non-fatal attacks.
+  - Top states with incidents  
+  - Top activities  
+  - Age patterns  
+  - Fatal vs non-fatal outcomes  
+- Built pivot tables (State × Activity)
 
 ---
 
 ## Day 4 — Insights & Recommendations
 
-- **Safe Locations:** Coastal U.S. states with historically low attacks → ideal camp sites.
-- **High-Risk Activities:** Surfing is higher risk → implement supervised sessions; other activities are lower risk.
-- **Target Age:** Teens 12–20 → focus safety campaigns and training here.
-- **Fatality:** Most attacks are non-fatal, but emergency preparedness is recommended.
-- **Combined View:** Heatmap of State × Activity guides **location, activity planning, and supervision strategies**.
+- **Location Insight:** U.S. coastal states with higher teen shark incidents indicate key regions for further study or safety interventions.  
+- **Activity Insight:** Surfing shows higher involvement in teen-related shark incidents compared to other activities.  
+- **Target Age Insight:** Teenagers (12–20) display distinct behavioral and activity patterns relevant to ocean safety.  
+- **Fatality Insight:** Most incidents are non-fatal, but emergency preparedness should still be emphasized.  
+- **Combined Insight:** State × Activity patterns help identify where educational or safety efforts may be most beneficial.
 
-**✅ Outcome:**  
-Enables a **data-driven, safe, and profitable teen surf school** with targeted lessons, optimal locations, informed safety protocols, and structured risk management.
+---
+
+## Outcome
+
+The analysis provides a clear, data-driven understanding of shark incident risks among teenagers and supports the design of safer, well-informed youth surf and ocean-activity programs through:
+
+- Evidence-based insights  
+- Improved safety protocols  
+- Targeted educational strategies  
+- Structured risk assessment  
